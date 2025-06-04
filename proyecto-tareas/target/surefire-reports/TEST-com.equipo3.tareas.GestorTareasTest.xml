@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.equipo3.tareas.GestorTareasTest" time="0.142" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.equipo3.tareas.GestorTareasTest" time="0.245" tests="22" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="java.vm.specification.version" value="21"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/local/sdkman/candidates/java/21.0.6-ms/lib"/>
-    <property name="sun.java.command" value="/workspaces/Crear_y_Buscar_Tarea/proyecto-tareas/target/surefire/surefirebooter-20250604014119086_3.jar /workspaces/Crear_y_Buscar_Tarea/proyecto-tareas/target/surefire 2025-06-04T01-41-18_991-jvmRun1 surefire-20250604014119086_1tmp surefire_0-20250604014119086_2tmp"/>
+    <property name="sun.java.command" value="/workspaces/Crear_y_Buscar_Tarea/proyecto-tareas/target/surefire/surefirebooter-20250604022938509_3.jar /workspaces/Crear_y_Buscar_Tarea/proyecto-tareas/target/surefire 2025-06-04T02-29-38_414-jvmRun1 surefire-20250604022938509_1tmp surefire_0-20250604022938509_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/workspaces/Crear_y_Buscar_Tarea/proyecto-tareas/target/test-classes:/workspaces/Crear_y_Buscar_Tarea/proyecto-tareas/target/classes:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/codespace/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/codespace/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/workspaces/Crear_y_Buscar_Tarea/proyecto-tareas/target/surefire/surefirebooter-20250604014119086_3.jar"/>
+    <property name="surefire.real.class.path" value="/workspaces/Crear_y_Buscar_Tarea/proyecto-tareas/target/surefire/surefirebooter-20250604022938509_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.6+7-LTS"/>
     <property name="user.name" value="codespace"/>
@@ -54,22 +54,194 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="crearTarea_conIdNoNumerico_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.066"/>
-  <testcase name="crearTarea_conDatosValidos_debeCrearTarea" classname="com.equipo3.tareas.GestorTareasTest" time="0.003">
-    <system-out><![CDATA[Tarea creada exitosamente: Implementar API
+  <testcase name="listarTareasProximasAVencer_limiteNegativo_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.055">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
 ]]></system-out>
   </testcase>
-  <testcase name="buscarTareaPorId_existente_debeDevolverTarea" classname="com.equipo3.tareas.GestorTareasTest" time="0.002">
-    <system-out><![CDATA[Tarea creada exitosamente: Tarea de Prueba
+  <testcase name="crearTarea_conIdNoNumerico_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.003">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
 ]]></system-out>
   </testcase>
-  <testcase name="crearTarea_conFechaVencimientoAnterior_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.003"/>
-  <testcase name="buscarTareaPorId_noExistente_debeDevolverOptionalVacio" classname="com.equipo3.tareas.GestorTareasTest" time="0.001"/>
-  <testcase name="crearTarea_conIdDuplicado_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.002">
-    <system-out><![CDATA[Tarea creada exitosamente: Tarea Inicial
+  <testcase name="actualizarEstadoTarea_ASiMismo_noDebeFallar" classname="com.equipo3.tareas.GestorTareasTest" time="0.006">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+Estado de la tarea ID '101' actualizado a: Pendiente
+Estado de la tarea ID '101' actualizado a: En_progreso
+Estado de la tarea ID '101' actualizado a: En_progreso
 ]]></system-out>
   </testcase>
-  <testcase name="buscarTareaPorId_conIdVacio_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.001"/>
-  <testcase name="buscarTareaPorId_conIdNulo_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.002"/>
-  <testcase name="crearTarea_conCamposObligatoriosNulosOVacios_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.01"/>
+  <testcase name="actualizarEstadoTarea_invalida_CompletadaAEnProgreso_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.003">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+Estado de la tarea ID '102' actualizado a: En_progreso
+Estado de la tarea ID '102' actualizado a: Completada
+]]></system-out>
+  </testcase>
+  <testcase name="listarTareasPorPrioridad_nula_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.007">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+]]></system-out>
+  </testcase>
+  <testcase name="listarTareasPorPrioridad_baja_debeDevolverTareasCorrectas" classname="com.equipo3.tareas.GestorTareasTest" time="0.009">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+]]></system-out>
+  </testcase>
+  <testcase name="crearTarea_conDatosValidos_debeCrearTarea" classname="com.equipo3.tareas.GestorTareasTest" time="0.009">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+Tarea creada exitosamente: Implementar API (ID: 12345)
+]]></system-out>
+  </testcase>
+  <testcase name="listarTareasProximasAVencer_limite1Dia_debeDevolverTareasHoyYManana" classname="com.equipo3.tareas.GestorTareasTest" time="0.004">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+]]></system-out>
+  </testcase>
+  <testcase name="listarTareasPorPrioridad_sinCoincidencias_debeDevolverListaVacia" classname="com.equipo3.tareas.GestorTareasTest" time="0.005">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+Tarea creada exitosamente: Temp Tarea (ID: 999)
+]]></system-out>
+  </testcase>
+  <testcase name="actualizarEstadoTarea_invalida_EnProgresoAPendiente_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.003">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+Estado de la tarea ID '102' actualizado a: En_progreso
+]]></system-out>
+  </testcase>
+  <testcase name="buscarTareaPorId_existente_debeDevolverTarea" classname="com.equipo3.tareas.GestorTareasTest" time="0.003">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+]]></system-out>
+  </testcase>
+  <testcase name="crearTarea_conFechaVencimientoAnterior_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.003">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+]]></system-out>
+  </testcase>
+  <testcase name="actualizarEstadoTarea_invalida_PendienteACompletada_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.001">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+]]></system-out>
+  </testcase>
+  <testcase name="listarTareasPorPrioridad_media_debeDevolverTareasCorrectas" classname="com.equipo3.tareas.GestorTareasTest" time="0.004">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+]]></system-out>
+  </testcase>
+  <testcase name="listarTareasPorPrioridad_alta_debeDevolverTareasCorrectas" classname="com.equipo3.tareas.GestorTareasTest" time="0.007">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+]]></system-out>
+  </testcase>
+  <testcase name="actualizarEstadoTarea_existente_PendienteAEnProgreso" classname="com.equipo3.tareas.GestorTareasTest" time="0.001">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+Estado de la tarea ID '101' actualizado a: En_progreso
+]]></system-out>
+  </testcase>
+  <testcase name="crearTarea_conIdDuplicado_debeLanzarExcepcion" classname="com.equipo3.tareas.GestorTareasTest" time="0.005">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+Tarea creada exitosamente: Tarea Inicial (ID: 111)
+]]></system-out>
+  </testcase>
+  <testcase name="listarTareasProximasAVencer_limite0Dias_debeDevolverTareasHoy" classname="com.equipo3.tareas.GestorTareasTest" time="0.005">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+]]></system-out>
+  </testcase>
+  <testcase name="listarTareasProximasAVencer_limite7Dias_debeDevolverTodasLasPrecargadasNoVencidas" classname="com.equipo3.tareas.GestorTareasTest" time="0.002">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+]]></system-out>
+  </testcase>
+  <testcase name="actualizarEstadoTarea_existente_EnProgresoACompletada" classname="com.equipo3.tareas.GestorTareasTest" time="0.002">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+Estado de la tarea ID '101' actualizado a: En_progreso
+Estado de la tarea ID '101' actualizado a: Completada
+]]></system-out>
+  </testcase>
+  <testcase name="listarTareasProximasAVencer_sinCoincidencias_debeDevolverListaVacia" classname="com.equipo3.tareas.GestorTareasTest" time="0.004">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+Tarea creada exitosamente: Tarea Lejana (ID: 300)
+]]></system-out>
+  </testcase>
+  <testcase name="actualizarEstadoTarea_noExistente_debeDevolverFalse" classname="com.equipo3.tareas.GestorTareasTest" time="0.013">
+    <system-out><![CDATA[Tarea creada exitosamente: Tarea Hoy Alta (ID: 100)
+Tarea creada exitosamente: Tarea Mañana Media (ID: 101)
+Tarea creada exitosamente: Tarea Pasado Mañana Baja (ID: 102)
+Tarea creada exitosamente: Tarea Semana Que Viene Alta (ID: 103)
+Tarea creada exitosamente: Tarea Hoy Media (ID: 104)
+No se pudo actualizar: Tarea con ID 'id_inexistente' no encontrada.
+]]></system-out>
+  </testcase>
 </testsuite>
